@@ -1,0 +1,11 @@
+{
+  "name": "device-alert-telegram",
+  "version": "0.0.2",
+  "private": true,
+  "main": "index.js",
+  "author": "Ramon López",
+  "dependencies": {
+    "messaging-api-telegram": "^0.7.11"
+
+  }
+}

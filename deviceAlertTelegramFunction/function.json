@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "g5-device-alert-telegram",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS"
+    }
+  ],
+  "disabled": false
+}

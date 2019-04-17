@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "queueMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "g5-device-alert-msg",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS"
+    }
+  ],
+  "disabled": false
+}

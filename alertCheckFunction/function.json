@@ -1,0 +1,39 @@
+{
+  "bindings": [
+    {
+      "name": "deviceMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "g5-iothub-function",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS"
+    },
+    {
+      "type": "serviceBus",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "outputAlertMsg",
+      "queueName": "g5-device-alert-msg",
+      "direction": "out"
+    },
+    {
+      "type": "serviceBus",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "outputTelegramMsg",
+      "queueName": "g5-device-alert-storage",
+      "direction": "out"
+    },
+    {
+      "type": "serviceBus",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "outputAlertStorageMsg",
+      "queueName": "g5-device-alert-telegram",
+      "direction": "out"
+    },
+    {
+      "type": "serviceBus",
+      "connection": "g5-service-bus_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "outputTelemetryStorageMsg",
+      "queueName": "g5-device-telemetry-storage",
+      "direction": "out"
+    }
+  ]
+}
