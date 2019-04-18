@@ -11,7 +11,7 @@ module.exports = async function (context, queueMsg) {
     let item = queueMsg;
     if (item) {
         item["PartitionKey"] = "Partition";
-        item["RowKey"] = uuid();
+        item["RowKey"] = new Date().getTime() + "_" + uuid();
         // Use { echoContent: true } if you want to return the created item including the Timestamp & etag
         tableService.insertEntity(TABLENAME, item, { echoContent: true }, function (error, result, resp) {
             if (!error) {
