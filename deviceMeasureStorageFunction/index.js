@@ -18,7 +18,6 @@ module.exports = async function (context, queueMsg) {
                 console.log(JSON.stringify(resp, result, 2));
             } else {
                 console.error(err.toString());
-                context.res.status(500).json({ error: error });
             }
         });
     }
